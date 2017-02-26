@@ -11,39 +11,33 @@ import Foundation
 class FacultyMember: CustomStringConvertible{
     
     
+    /*
+        Fields to be stored from CSV File
+    */
     var fname: String, lname: String, long_desc: String, location: String, email: String, office1: String ,ext1: String, office2: String, ext2: String, office3: String, ext3: String
     
+    /*
+        Constants to represent the ranking order for the directory
+    */
     static let PRINCIPAL: Int = 0, ASSOCIATE_PRINCIPAL: Int = 1, ASSISTANT_PRINCIPAL:Int = 2,
         TEACHER: Int = 3, SECRETARY: Int = 4, SUPPORT_STAFF: Int = 5
     
+    /*
+        Used for nice printing a FacultyMember
+    */
+    
     public var description: String { return fname + " " + lname + ", " + long_desc}
     
-    var directoryKey: String{
-        get{
-            return getSchoolByLocation(location: self.location)
-        }
-    }
     
-    var rank: Int{
-        get{
-            if self.long_desc.contains("PRINCIPAL"){
-                if self.long_desc.contains("ASSISTANT"){
-                    return FacultyMember.ASSISTANT_PRINCIPAL
-                }else if self.long_desc.contains("ASSOCIATE"){
-                   return FacultyMember.ASSOCIATE_PRINCIPAL
-                }else{
-                    return FacultyMember.PRINCIPAL
-                }
-            }else if self.long_desc.contains("TEACHER"){
-                return FacultyMember.TEACHER
-            }else if self.long_desc.contains("SECRETARY"){
-                return FacultyMember.SECRETARY
-            }else{
-                return FacultyMember.SUPPORT_STAFF
-            }
-        }
-    }
+    /*
+        Variables must be lazy because you don't want to set them until the other
+        fields have been initialized
+    */
+    lazy var directoryKey: String = self.getSchoolByLocation(location: self.location)
+    lazy var rank: Int = self.getRank()
     
+    
+  
     init(fname: String, lname: String ,long_desc: String ,location: String ,email: String,office1: String, ext1: String, office2: String, ext2: String, office3: String, ext3: String){
         self.fname = fname
         self.lname = lname
@@ -108,7 +102,25 @@ class FacultyMember: CustomStringConvertible{
         }
         return school
     }
-
     
+    func getRank() -> Int{
+        if self.long_desc.contains("PRINCIPAL"){
+            if self.long_desc.contains("ASSISTANT"){
+                return FacultyMember.ASSISTANT_PRINCIPAL
+            }else if self.long_desc.contains("ASSOCIATE"){
+                return FacultyMember.ASSOCIATE_PRINCIPAL
+            }else{
+                return FacultyMember.PRINCIPAL
+            }
+        }else if self.long_desc.contains("TEACHER"){
+            return FacultyMember.TEACHER
+        }else if self.long_desc.contains("SECRETARY"){
+            return FacultyMember.SECRETARY
+        }else{
+            return FacultyMember.SUPPORT_STAFF
+        }
+    }
+    
+
     
 }
