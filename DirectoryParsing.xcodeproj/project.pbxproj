@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7C5B60471E6233A900A1D830 /* DirectoryTesting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DirectoryTesting; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5B60471E6233A900A1D830 /* DirectoryParsing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DirectoryParsing; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5B604A1E6233A900A1D830 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7C5B60511E62388F00A1D830 /* FacultyMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyMember.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +43,7 @@
 		7C5B603E1E6233A900A1D830 = {
 			isa = PBXGroup;
 			children = (
-				7C5B60491E6233A900A1D830 /* DirectoryTesting */,
+				7C5B60491E6233A900A1D830 /* DirectoryParsing */,
 				7C5B60481E6233A900A1D830 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,26 +51,27 @@
 		7C5B60481E6233A900A1D830 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C5B60471E6233A900A1D830 /* DirectoryTesting */,
+				7C5B60471E6233A900A1D830 /* DirectoryParsing */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C5B60491E6233A900A1D830 /* DirectoryTesting */ = {
+		7C5B60491E6233A900A1D830 /* DirectoryParsing */ = {
 			isa = PBXGroup;
 			children = (
 				7C5B604A1E6233A900A1D830 /* main.swift */,
 				7C5B60511E62388F00A1D830 /* FacultyMember.swift */,
 			);
+			name = DirectoryParsing;
 			path = DirectoryTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C5B60461E6233A900A1D830 /* DirectoryTesting */ = {
+		7C5B60461E6233A900A1D830 /* DirectoryParsing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C5B604E1E6233A900A1D830 /* Build configuration list for PBXNativeTarget "DirectoryTesting" */;
+			buildConfigurationList = 7C5B604E1E6233A900A1D830 /* Build configuration list for PBXNativeTarget "DirectoryParsing" */;
 			buildPhases = (
 				7C5B60431E6233A900A1D830 /* Sources */,
 				7C5B60441E6233A900A1D830 /* Frameworks */,
@@ -80,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = DirectoryTesting;
+			name = DirectoryParsing;
 			productName = DirectoryTesting;
-			productReference = 7C5B60471E6233A900A1D830 /* DirectoryTesting */;
+			productReference = 7C5B60471E6233A900A1D830 /* DirectoryParsing */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C5B60421E6233A900A1D830 /* Build configuration list for PBXProject "DirectoryTesting" */;
+			buildConfigurationList = 7C5B60421E6233A900A1D830 /* Build configuration list for PBXProject "DirectoryParsing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C5B60461E6233A900A1D830 /* DirectoryTesting */,
+				7C5B60461E6233A900A1D830 /* DirectoryParsing */,
 			);
 		};
 /* End PBXProject section */
@@ -241,7 +242,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C5B60421E6233A900A1D830 /* Build configuration list for PBXProject "DirectoryTesting" */ = {
+		7C5B60421E6233A900A1D830 /* Build configuration list for PBXProject "DirectoryParsing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C5B604C1E6233A900A1D830 /* Debug */,
@@ -250,7 +251,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C5B604E1E6233A900A1D830 /* Build configuration list for PBXNativeTarget "DirectoryTesting" */ = {
+		7C5B604E1E6233A900A1D830 /* Build configuration list for PBXNativeTarget "DirectoryParsing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C5B604F1E6233A900A1D830 /* Debug */,

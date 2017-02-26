@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C5B60461E6233A900A1D830"
-               BuildableName = "DirectoryTesting"
-               BlueprintName = "DirectoryTesting"
-               ReferencedContainer = "container:DirectoryTesting.xcodeproj">
+               BuildableName = "DirectoryParsing"
+               BlueprintName = "DirectoryParsing"
+               ReferencedContainer = "container:DirectoryParsing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C5B60461E6233A900A1D830"
-            BuildableName = "DirectoryTesting"
-            BlueprintName = "DirectoryTesting"
-            ReferencedContainer = "container:DirectoryTesting.xcodeproj">
+            BuildableName = "DirectoryParsing"
+            BlueprintName = "DirectoryParsing"
+            ReferencedContainer = "container:DirectoryParsing.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C5B60461E6233A900A1D830"
-            BuildableName = "DirectoryTesting"
-            BlueprintName = "DirectoryTesting"
-            ReferencedContainer = "container:DirectoryTesting.xcodeproj">
+            BuildableName = "DirectoryParsing"
+            BlueprintName = "DirectoryParsing"
+            ReferencedContainer = "container:DirectoryParsing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C5B60461E6233A900A1D830"
-            BuildableName = "DirectoryTesting"
-            BlueprintName = "DirectoryTesting"
-            ReferencedContainer = "container:DirectoryTesting.xcodeproj">
+            BuildableName = "DirectoryParsing"
+            BlueprintName = "DirectoryParsing"
+            ReferencedContainer = "container:DirectoryParsing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
